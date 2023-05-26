@@ -3,12 +3,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  transition: background-color 0.5s ease;
 }
 
 .container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
+  transition: opacity 0.5s ease;
 }
 
 /* Стили для заголовков */
@@ -17,6 +19,7 @@ h1, h2 {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  transition: color 0.5s ease;
 }
 
 /* Стили для текста */
@@ -25,6 +28,7 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 10px;
+  transition: color 0.5s ease;
 }
 
 /* Стили для вкладок */
@@ -32,6 +36,7 @@ nav ul.tabs {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  transition: opacity 0.5s ease;
 }
 
 nav ul.tabs li {
@@ -44,23 +49,22 @@ nav ul.tabs li a {
   color: #333;
   text-decoration: none;
   font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-nav ul.tabs li a:hover {
-  background-color: #f0f0f0;
+  transition: color 0.5s ease;
 }
 
 nav ul.tabs li a.active {
-  background-color: #333;
   color: #fff;
+  background-color: #333;
+  transition: background-color 0.5s ease;
 }
 
 /* Стили для контентных блоков вкладок */
 .tab-content {
   display: none;
+  transition: opacity 0.5s ease;
 }
 
 .tab-content.active {
   display: block;
+  opacity: 1;
 }
