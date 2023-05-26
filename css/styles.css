@@ -12,9 +12,27 @@ body {
 }
 
 /* Стили для заголовков */
-h1, h2 {
+h1, h2, h3 {
   color: #333;
+  font-weight: bold;
+}
+
+h1 {
   font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 /* Стили для текста */
@@ -22,11 +40,45 @@ p {
   color: #555;
   font-size: 16px;
   line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-/* Стили для подвала */
-footer {
-  color: #777;
-  font-size: 12px;
-  text-align: center;
+/* Стили для кнопок */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* Стили для ссылок */
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Стили для списка */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Стили для изображений */
+img {
+  max-width: 100%;
+  height: auto;
 }
