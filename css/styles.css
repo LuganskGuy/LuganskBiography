@@ -15,6 +15,8 @@ body {
 h1, h2 {
   color: #333;
   font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* Стили для текста */
@@ -22,10 +24,43 @@ p {
   color: #555;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 /* Стили для вкладок */
 nav ul.tabs {
   list-style-type: none;
   padding: 0;
-  margin
+  margin: 0;
+}
+
+nav ul.tabs li {
+  display: inline-block;
+}
+
+nav ul.tabs li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul.tabs li a:hover {
+  background-color: #f0f0f0;
+}
+
+nav ul.tabs li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Стили для контентных блоков вкладок */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
