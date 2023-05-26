@@ -1,0 +1,32 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Стили для заголовков */
+h1, h2 {
+  color: #333;
+  font-size: 24px;
+}
+
+/* Стили для текста */
+p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Стили для подвала */
+footer {
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+}
